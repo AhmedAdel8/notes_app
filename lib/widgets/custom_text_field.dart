@@ -9,18 +9,20 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       cursorColor: KprimaryColor,
       decoration: InputDecoration(
-          hintText: 'Title',
-          border: BuildBorder(),
-          errorBorder: BuildBorder(),
-          focusedBorder: BuildBorder(KprimaryColor)),
+        hintText: 'Title',
+        border: buildBorder(),
+        enabledBorder: buildBorder(),
+        focusedBorder: buildBorder(KprimaryColor),
+      ),
     );
   }
 
-  OutlineInputBorder BuildBorder([color]) {
+  OutlineInputBorder buildBorder([color]) {
     return OutlineInputBorder(
-        borderRadius: BorderRadius.circular(8),
-        borderSide: BorderSide(
-          color: color ?? Colors.white,
-        ));
+      borderRadius: BorderRadius.circular(8),
+      borderSide: BorderSide(
+        color: color ?? Colors.white,
+      ),
+    );
   }
 }
