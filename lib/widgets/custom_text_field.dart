@@ -12,12 +12,12 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      cursorColor: KprimaryColor,
+      cursorColor: kprimaryColor,
       decoration: InputDecoration(
         hintText: hint,
         border: buildBorder(),
         enabledBorder: buildBorder(),
-        focusedBorder: buildBorder(KprimaryColor),
+        focusedBorder: buildBorder(kprimaryColor),
       ),
     );
   }
